@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Porównywarka plików</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Porównywarka plików</h1>
+
+    <div class="controls">
+      <button id="btn-folder">📁 Wybierz folder</button>
+      <p id="folder-path" class="path"></p>
+
+      <button id="btn-excel">📄 Wybierz plik Excel</button>
+      <p id="excel-path" class="path"></p>
+
+      <button id="btn-compare">🔍 Porównaj</button>
+    </div>
+
+    <div class="summary">
+      <p>Pliki w folderze: <span id="count-folder">0</span></p>
+      <p>Pliki w Excelu: <span id="count-excel">0</span></p>
+      <p>Brakujące pliki: <span id="count-missing">0</span></p>
+    </div>
+
+    <table id="results-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nazwa pliku</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

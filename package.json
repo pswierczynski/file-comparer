@@ -1,0 +1,25 @@
+{
+  "name": "electron-file-compare",
+  "version": "1.0.0",
+  "description": "Aplikacja do porównywania plików z listą z Excela",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win portable"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.9",
+    "xlsx": "^0.18.5"
+  },
+  "build": {
+  "appId": "electron-file-compare",
+  "productName": "Electron-file-compare",
+  "win": {
+    "target": "portable",
+    "icon": "icon.ico"
+  }
+},
+  "devDependencies": {
+    "electron-builder": "^26.0.12"
+  }
+}
