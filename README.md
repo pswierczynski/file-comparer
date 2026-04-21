@@ -1,4 +1,4 @@
-# 📂 Electron File Compare
+# 📂 File Comparer
 
 A desktop application for comparing files, built with Electron.
 
